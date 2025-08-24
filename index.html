@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B1 Exam Countdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image" href="icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main role="main" class="container" aria-label="Countdown Timer">
+      <div class="card">
+        <h1 id="title">Time Until B1 Exam</h1>
+        <p class="subtitle">October 30, 2025 – 6:00 AM</p>
+
+        <section class="countdown" aria-live="polite" aria-atomic="true">
+          <div class="time-segment" id="days-segment">
+            <span class="number" id="days">--</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="time-segment" id="hours-segment">
+            <span class="number" id="hours">--</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="time-segment" id="minutes-segment">
+            <span class="number" id="minutes">--</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="time-segment" id="seconds-segment">
+            <span class="number" id="seconds">--</span>
+            <span class="label">Seconds</span>
+          </div>
+        </section>
+
+        <p id="end-message" class="hidden" role="alert">
+          The B1 Exam time has arrived! Good luck!
+        </p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
